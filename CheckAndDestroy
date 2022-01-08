@@ -1,0 +1,13 @@
+if(eventData.pointerDrag != null)
+       {
+           eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+            if(eventData.pointerDrag == blackpaper)
+            {
+                Destroy(blackpaper);
+            }
+            else
+            {
+                return;
+            }
+        
+       }
